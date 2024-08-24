@@ -7,18 +7,18 @@ public class hw3 {
         short b = 2;
         int c = 3;
         long d = 4L;
-        float maleName = 3.4f;
+        float mainLesson = 3.4f;
         double g = 6;
 
-        double allSum = a + b + c + d + maleName + g;
+        double allSum = a + b + c + d + mainLesson + g;
 
         System.out.println("Значение переменной a с типом byte равно " + a);
         System.out.println("Значение переменной b с типом short равно " + b);
         System.out.println("Значение переменной c с типом int равно " + c);
         System.out.println("Значение переменной d с типом long равно " + d);
-        System.out.println("Значение переменной maleName с типом float равно " + maleName);
+        System.out.println("Значение переменной mainLesson с типом float равно " + mainLesson);
         System.out.println("Значение переменной g с типом double равно " + g);
-        System.out.println("Значение переменной allSum с типом double равно " + String.format("%.3f", allSum));
+        System.out.println("Значение переменной allSum с типом double равно " + String.format("%.1f", allSum));
 
         //Task 2
         System.out.println("\n");
@@ -31,8 +31,8 @@ public class hw3 {
         short h = 27897;
         byte w = 67;
 
-        allSum = k + j + p + o + l + h + w;
-        System.out.println("Значение переменной allSum равно " + String.format("%.3f", allSum));
+        //allSum = k + j + p + o + l + h + w;
+        //System.out.println("Значение переменной allSum равно " + String.format("%.1f", allSum));
 
         //Task 3
         System.out.println("\n");
@@ -43,8 +43,8 @@ public class hw3 {
         byte k3 = 30;
         short allPaper = 480;
 
-        byte allPupils = (byte) (k1 + k2 + k3);
-        short onePupil = (short) (allPaper / allPupils);
+        int allPupils = k1 + k2 + k3;
+        int onePupil = allPaper / allPupils;
 
         System.out.println("Всего учеников в трёх классах " + allPupils + " учеников.");
         System.out.println("На каждого ученика рассчитано " + onePupil + " листов бумаги.");
@@ -122,6 +122,7 @@ public class hw3 {
         mpayMasha = (int) (mpayMasha + mpayMasha * 0.1);
         mpayDenis = (int) (mpayDenis + mpayDenis * 0.1);
         mpayKris = (int) (mpayKris + mpayKris * 0.1);
+
         //System.out.println(mpayMasha);
         //System.out.println(mpayDenis);
         //System.out.println(mpayKris);
